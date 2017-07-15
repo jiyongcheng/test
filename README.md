@@ -1,4 +1,4 @@
-You could visit the page: jiyongcheng.me for a quick look
+You could visit the page: http://jiyongcheng.me for a quick look
 
 You also could download the project to local have a test
 
