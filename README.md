@@ -42,9 +42,8 @@ then create a file : database.sqlite in the project folder database.
 
 and make some changes in .env file as follows:
 
-DB_CONNECTION=sqlite
-DB_DATABASE=YOUR ABSOLUTE PATH OF FILE database.sqlite, like :/Users/Aaron/Sites/test/database/database.sqlite
-or E:\test\database\database.sqlite
+DB_CONNECTION=sqlite   
+DB_DATABASE=YOUR ABSOLUTE PATH OF FILE database.sqlite
 
 (6)migreate tables
 
