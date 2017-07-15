@@ -1,18 +1,20 @@
-You could visit the page: http://jiyongcheng.me for a quick look
+1.You could visit the page: http://jiyongcheng.me for a quick look
 
-You also could download the project to local have a test
+you could use email:hello@hello.com password:123456 as a user login and test, or just signup and test
 
-1.git clone https://github.com/jiyongcheng/test.git 
+2.You also could download the project to local have a test
+
+(1)git clone https://github.com/jiyongcheng/test.git 
 
 or download it from github
 
-2.cd to the project root folder and run:
+(2)cd to the project root folder and run:
 
 **composer install**
 
-3.if you use mysql, create a databse, for example: phptest
+(3)if you use mysql, create a databse, for example: phptest
 
-4.cd to project root folder, create .env file
+(4)cd to project root folder, create .env file
 
 you could run : 
 
@@ -32,7 +34,7 @@ DB_USERNAME=YOUR_DATABASE_USERNAME
 
 DB_PASSWORD=YOUR_DATABASE_PASSWORD
 
-5.if you use sqlite, cd to project root folder and run:
+(5)if you use sqlite, cd to project root folder and run:
 
 **cp .env.sqlite .env**
 
@@ -44,21 +46,21 @@ DB_CONNECTION=sqlite
 DB_DATABASE=YOUR ABSOLUTE PATH OF FILE database.sqlite, like :/Users/Aaron/Sites/test/database/database.sqlite
 or E:\test\database\database.sqlite
 
-6.migreate tables
+(6)migreate tables
 
 **php artisan migrate**
 
-7.if you want to populate some data
+(7)if you want to populate some data
 
 **php artisan db:seed**
 
-8.cd to project root folder, and run:
+(8)cd to project root folder, and run:
 
 **php artisan serve**
 
 then you will got a url maybe like : 127.0.0.1:8000, just use browser open this url and visit the page.
 
-9.if you want to run the phpunit test, cd to the project root folder, and run:
+(9)if you want to run the phpunit test, cd to the project root folder, and run:
 
 **./vendor/bin/phpunit**
 
