@@ -42,7 +42,8 @@ class PetController extends ApiController
             'breed'=>'required|max:255',
             'age'=>'required|integer',
             'price'=>'required|numeric|between:0,999999.99|regex:/^\d*(\.\d{1,2})?$/',
-            'list_date'=>'required|date'
+            'list_date'=>'required|date_multi_format:"Y-m-d H:i:s","Y-m-d"',
+            'sale_date'=>'date_multi_format:"Y-m-d H:i:s","Y-m-d"' ,
         ]);
         $pet = new Pet;
         $pet->breed = $request->input('breed');

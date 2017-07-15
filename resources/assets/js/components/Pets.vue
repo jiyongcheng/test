@@ -59,9 +59,12 @@
                         </form-error>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group" v-bind:class="{'has-error': errors.sale_date}">
                         <label for="sale_date">Sale Date</label>
                         <input type="text" id="sale_date" name="sale_date" class="form-control" v-model="pet.sale_date" placeholder="please input sale date" />
+                        <form-error v-if="errors.list_date" :errors="errors">
+                            {{ errors.list_date }}
+                        </form-error>
                     </div>
 
                     <span class="input-group-btn">

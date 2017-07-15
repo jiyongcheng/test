@@ -42130,6 +42130,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -42578,7 +42581,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "errors": _vm.errors
     }
   }, [_vm._v("\n                        " + _vm._s(_vm.errors.list_date) + "\n                    ")]) : _vm._e()], 1), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
+    staticClass: "form-group",
+    class: {
+      'has-error': _vm.errors.sale_date
+    }
   }, [_c('label', {
     attrs: {
       "for": "sale_date"
@@ -42606,7 +42612,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.pet.sale_date = $event.target.value
       }
     }
-  })]), _vm._v(" "), _c('span', {
+  }), _vm._v(" "), (_vm.errors.list_date) ? _c('form-error', {
+    attrs: {
+      "errors": _vm.errors
+    }
+  }, [_vm._v("\n                        " + _vm._s(_vm.errors.list_date) + "\n                    ")]) : _vm._e()], 1), _vm._v(" "), _c('span', {
     staticClass: "input-group-btn"
   }, [_c('button', {
     directives: [{
