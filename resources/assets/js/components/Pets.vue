@@ -141,7 +141,14 @@
             },
             updatePet: function (id) {
                 const token = this.checkToken();
-                axios.put('/api/pet/'+id+'?token='+token,{breed:this.pet.breed}).then((response) => {
+                axios.put('/api/pet/'+id+'?token='+token,{
+                    breed:this.pet.breed,
+                    age:this.pet.age,
+                    name:this.pet.name,
+                    price:this.pet.price,
+                    list_date:this.pet.list_date,
+                    sale_date:this.pet.sale_date
+                }).then((response) => {
                     this.message = response.data.message;
                     this.fetchPetList();
                     this.init();

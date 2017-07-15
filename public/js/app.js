@@ -42199,7 +42199,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             var _this3 = this;
 
             var token = this.checkToken();
-            axios.put('/api/pet/' + id + '?token=' + token, { breed: this.pet.breed }).then(function (response) {
+            axios.put('/api/pet/' + id + '?token=' + token, {
+                breed: this.pet.breed,
+                age: this.pet.age,
+                name: this.pet.name,
+                price: this.pet.price,
+                list_date: this.pet.list_date,
+                sale_date: this.pet.sale_date
+            }).then(function (response) {
                 _this3.message = response.data.message;
                 _this3.fetchPetList();
                 _this3.init();
