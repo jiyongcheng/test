@@ -63,6 +63,8 @@ then you will got a url maybe like : 127.0.0.1:8000, just use browser open this 
 
 **./vendor/bin/phpunit**
 
+(10)there is a database schema for Test1 (webservices) and there are two test csv files for the Test2(php coding challenge)
+something maybe need to pay attention:
 
 something maybe need to pay attention:
 
