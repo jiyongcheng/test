@@ -14,7 +14,7 @@ use Illuminate\Http\Request;
 */
 
 
-Route::get('/pets', 'Mypal\PetController@list')->name('pets.list');
+Route::get('/pets', 'Mypal\PetController@petList')->name('pets.list');
 Route::get('/pet/{id}', 'Mypal\PetController@detail')->name('pets.detail')->middleware('auth.jwt');
 Route::post('/pet', 'Mypal\PetController@create')->name('pets.create')->middleware('auth.jwt');
 Route::put('/pet/{id}', 'Mypal\PetController@edit')->name('pets.update')->middleware('auth.jwt');

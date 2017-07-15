@@ -14,7 +14,7 @@ class PetController extends ApiController
     /*
      * retrieve a list of all pets, ordered by list date desc
      */
-    public function list() {
+    public function petList() {
         $pets = Pet::orderBy('list_date','desc')->get();
         return $this->success($pets);
     }
